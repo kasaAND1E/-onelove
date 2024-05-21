@@ -16,7 +16,10 @@ async def hello(ctx):
 
 @bot.command()
 async def ecology(ctx):
-    await ctx.send(f'Береги землю! Выбрасывай мусор куда надо! А то жнец съест твой мотылёк! (Subnautica, да, она) ')
+    await ctx.send(f'Береги землю! Выбрасывай мусор в положенные для этого места! А то сам окажешься там засорив землю! ')
+    @bot.command()
+async def help(ctx):
+    await ctx.send(f'введи комнду $hello или $ecology ')
 
 @bot.command()
 async def heh(ctx, count_heh = 5):
